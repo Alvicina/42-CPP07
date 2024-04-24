@@ -6,7 +6,7 @@
 /*   By: alvicina <alvicina@student.42urduliz.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/24 12:47:11 by alvicina          #+#    #+#             */
-/*   Updated: 2024/04/24 13:07:07 by alvicina         ###   ########.fr       */
+/*   Updated: 2024/04/24 13:09:25 by alvicina         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,6 +42,5 @@ T const &	max(T const & a, T const & b)
 	else
 		return (b);
 }
-
 
 #endif
