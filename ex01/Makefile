@@ -6,20 +6,20 @@
 #    By: alvicina <alvicina@student.42urduliz.co    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/03/13 11:42:41 by alvicina          #+#    #+#              #
-#    Updated: 2024/04/24 16:36:48 by alvicina         ###   ########.fr        #
+#    Updated: 2024/04/24 16:39:10 by alvicina         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 #SETUP
 
-NAME            = Template
+NAME            = Iter
 CC              = c++
 RM              = rm -rf
 FLAGS           = -Wall -Wextra -Werror -std=c++98 -g3
 
 #FILES AND PATH
 
-HEADER_SRCS =  whatever.hpp \
+HEADER_SRCS =  iter.hpp \
 		      
 HEADER_DIR  = includes/
 HEADER      = $(addprefix $(HEADER_DIR), $(HEADER_SRCS))

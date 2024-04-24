@@ -1,46 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Template.hpp                                       :+:      :+:    :+:   */
+/*   iter.hpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: alvicina <alvicina@student.42urduliz.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/04/24 12:47:11 by alvicina          #+#    #+#             */
-/*   Updated: 2024/04/24 13:09:25 by alvicina         ###   ########.fr       */
+/*   Created: 2024/04/24 16:35:04 by alvicina          #+#    #+#             */
+/*   Updated: 2024/04/24 17:37:02 by alvicina         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef TEMPLATE_HPP
-#define TEMPLATE_HPP
+#ifndef ITER_HPP
+#define ITER_HPP
 
 #include <iostream>
 
 template <typename T>
-void	swap(T& a, T& b)
+void	iter(T* array, size_t length, void (*func)(T const & element))
 {
-	T	temp;
-
-	temp = a;
-	a = b;
-	b = temp;
+	size_t	i = 0;
+	while (i < length)
+	{
+		func(array[i]);
+		i++;
+	}
 }
 
 template <typename T>
-T const &	min(T const & a, T const & b)
+void	printElement(T const & element)
 {
-	if (a >= b)
-		return (b);
-	else 
-		return (a);
-}
-
-template <typename T>
-T const &	max(T const & a, T const & b)
-{
-	if (a > b)
-		return (a);
-	else
-		return (b);
+	std::cout << element << std::endl;
 }
 
 #endif
