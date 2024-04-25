@@ -6,7 +6,7 @@
 /*   By: alvicina <alvicina@student.42urduliz.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/25 10:30:29 by alvicina          #+#    #+#             */
-/*   Updated: 2024/04/25 17:21:54 by alvicina         ###   ########.fr       */
+/*   Updated: 2024/04/25 17:38:50 by alvicina         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ template <typename T>
 class Array
 {
 	private:
-		T				*_arrayPtr;
+		T				 *_arrayPtr;
 		unsigned int	_size;
 	public:
 		Array()
@@ -75,7 +75,7 @@ class Array
 			else
 				return (_arrayPtr[i]);
 		}
-		
+
 		unsigned int	size(void) const
 		{
 			return (_size);

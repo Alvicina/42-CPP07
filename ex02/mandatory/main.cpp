@@ -6,7 +6,7 @@
 /*   By: alvicina <alvicina@student.42urduliz.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/25 12:24:55 by alvicina          #+#    #+#             */
-/*   Updated: 2024/04/25 17:21:40 by alvicina         ###   ########.fr       */
+/*   Updated: 2024/04/25 17:37:41 by alvicina         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,23 @@
 
 #define MAX_VAL 15
 
-/////////////////////////////ARRAY DE INTS/////////////////////////////////////////
+int main(void)
+{
+    Array<char> chars;
+    Array<int>  ints(MAX_VAL);
 
+    for (int i = 0; i < MAX_VAL; i++)
+    {
+        ints[i] = 2;
+        std::cout << ints[i] << std::endl;
+    }
+    
+    system("leaks Array");
+    return (EXIT_SUCCESS);
+}
+
+/////////////////////////////ARRAY DE INTS/////////////////////////////////////////
+/*
 int main(int, char**)
 {
     Array<int> numbers(MAX_VAL);
@@ -76,7 +91,7 @@ int main(int, char**)
     delete [] mirror;//
 	system ("leaks Array");
     return 0;
-}
+}*/
 
 
 /////////////////////////////ARRAY DE CHARS/////////////////////////////////////////
