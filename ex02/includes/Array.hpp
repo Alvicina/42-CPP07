@@ -6,7 +6,7 @@
 /*   By: alvicina <alvicina@student.42urduliz.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/25 10:30:29 by alvicina          #+#    #+#             */
-/*   Updated: 2024/04/25 12:38:40 by alvicina         ###   ########.fr       */
+/*   Updated: 2024/04/25 17:21:54 by alvicina         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -102,5 +102,31 @@ std::ostream& operator<<(std::ostream &o, Array <T> const &a)
 	}
 	return (o);
 }
+/*
+class	prueba
+{
+	private:
+		int	_age;
+	public:
+		prueba()
+		{
+			
+		}
+
+		~prueba()
+		{
+			
+		}
+		
+		void setAge(int age)
+		{
+			_age = age;
+		}
+
+		int	getAge(void) const
+		{
+			return (_age);
+		}		
+};*/
 
 #endif
